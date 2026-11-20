@@ -20,8 +20,6 @@ else count <= count;                // holds present value
 
 ## Design / RTL Program
 ```
-
- 
 module up_counter (
     input  wire       clk,    // clock
     input  wire       rst,    // asynchronous active-high reset
@@ -37,15 +35,9 @@ module up_counter (
             count <= count;          // hold
     end
 endmodule
-
-
-
-
 ```
 ## Testbench Program
 ```
-
- 
 module tb7;
     reg  clk, rst, en;
     wire [3:0] count;
@@ -96,6 +88,8 @@ module tb7;
         #20 $finish;
     end
 endmodule
+
+```
 
 
 
